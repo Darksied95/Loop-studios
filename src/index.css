@@ -36,3 +36,17 @@ img {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
 }
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}

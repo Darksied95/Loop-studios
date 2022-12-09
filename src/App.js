@@ -1,9 +1,9 @@
-
-
+import { Header, Modal } from './components'
 function App() {
   return (
     <div className="App">
-      APP
+      <Header />
+      {/* <Modal /> */}
     </div>
   );
 }
