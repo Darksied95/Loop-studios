@@ -17,7 +17,42 @@
   outline: 2px solid white;
   text-transform: uppercase;
   font-size: 3.1rem;
+  max-width: 420px;
 }
 
-@media screen and (min-width: px) {
+@media screen and (min-width: 485px) {
+  .container {
+    margin-bottom: 1em;
+  }
+
+  .list_container {
+    color: white;
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+    flex-grow: 1;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mainText {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .header {
+    background-image: url(/src/assets/desktop/image-hero.jpg);
+    height: 400px;
+    background-size: cover;
+  }
+  .container {
+    margin-inline: 5em;
+    margin-bottom: 4em;
+  }
+  .mainText {
+    margin-left: 1.5em;
+    line-height: 1;
+    padding: 2rem 1rem;
+  }
 }

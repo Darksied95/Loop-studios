@@ -9,7 +9,7 @@ const Header = () => {
       <div className={styles.container}>
         <img src={logo} alt="loopstudios" />
         <img src={hamburger} alt="hamburger menu" className="mobile" />
-        <ul className={`${styles.list_container} desktop`}>
+        <ul className={`${styles.list_container} desktop alata`}>
           <li>About</li>
           <li>Careers</li>
           <li>Events</li>
