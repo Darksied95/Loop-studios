@@ -1,5 +1,7 @@
 .gallery_container {
   padding: 0 1.5em;
+  max-width: 800px;
+  margin: auto;
 }
 
 .gallery_heading {
@@ -39,4 +41,87 @@
   margin-bottom: 8em;
   border: 1px solid black;
   outline: 0px;
+}
+
+@media screen and (min-width: 640px) {
+  .gallery_container {
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "heading heading heading button"
+      "DE NA STV TG"
+      "FUAV PB TC MIF";
+  }
+
+  .gallery_heading {
+    grid-area: heading;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .gallery-button {
+    display: block;
+    grid-area: button;
+    margin-right: 0;
+  }
+  .gallery_text {
+    top: 240px;
+  }
+  .DE {
+    grid-area: DE;
+  }
+  .DE > img {
+    content: url("../../assets/desktop/image-deep-earth.jpg");
+  }
+  .NA {
+    grid-area: NA;
+  }
+  .NA > img {
+    content: url("../../assets/desktop/image-night-arcade.jpg");
+  }
+  .STV {
+    grid-area: STV;
+  }
+  .STV > img {
+    content: url("../../assets/desktop/image-soccer-team.jpg");
+  }
+
+  .TG {
+    grid-area: TG;
+  }
+  .TG > img {
+    content: url("../../assets/desktop/image-grid.jpg");
+  }
+
+  .FUAV {
+    grid-area: FUAV;
+  }
+  .FUAV > img {
+    content: url("../../assets/desktop/image-from-above.jpg");
+  }
+
+  .PB {
+    grid-area: PB;
+  }
+  .PB > img {
+    content: url("../../assets/desktop/image-pocket-borealis.jpg");
+  }
+
+  .TC {
+    grid-area: TC;
+  }
+  .TC > img {
+    content: url("../../assets/desktop/image-curiosity.jpg");
+  }
+
+  .MIF {
+    grid-area: MIF;
+  }
+  .MIF > img {
+    content: url("../../assets/desktop/image-fisheye.jpg");
+  }
 }
