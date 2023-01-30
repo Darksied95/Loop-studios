@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <section className={styles.container}>
       <img src={image} alt="man with VR" className={styles.image} />
+
       <div className={styles.article}>
         <h1 className={`${styles.heading} josefin`}>
           The leader in interactive VR
