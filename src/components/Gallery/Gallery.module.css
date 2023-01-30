@@ -1,0 +1,42 @@
+.gallery_container {
+  padding: 0 1.5em;
+}
+
+.gallery_heading {
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1.2em;
+}
+
+.gallery_image_container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.gallery_text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  line-height: 1;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.gallery-button {
+  background-color: white;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.6em 2.5em;
+  display: block;
+  margin: auto;
+  margin-bottom: 8em;
+  border: 1px solid black;
+  outline: 0px;
+}
