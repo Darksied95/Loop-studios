@@ -3,12 +3,17 @@ import logo from "../../assets/logo.svg";
 import closeIcon from "../../assets/icon-close.svg";
 import styles from "./Modal.module.css";
 
-const Modal = () => {
+const Modal = ({ modalState, setModalState }) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} 
+      ${modalState ? styles.show : styles.hide}`}
+    >
       <header className={styles.header}>
         <img src={logo} alt="loopstudios" />
-        <img src={closeIcon} alt="close modal" />
+        {modalState && (
+          <img src={closeIcon} alt="close modal" onClick={handleModal} />
+        )}
       </header>
 
       <main>
@@ -22,6 +27,9 @@ const Modal = () => {
       </main>
     </div>
   );
+  function handleModal() {
+    setModalState(() => false);
+  }
 };
 
 export default Modal;

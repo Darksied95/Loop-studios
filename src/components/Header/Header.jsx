@@ -3,12 +3,17 @@ import logo from "../../assets/logo.svg";
 import hamburger from "../../assets/icon-hamburger.svg";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ setModalState }) => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <img src={logo} alt="loopstudios" />
-        <img src={hamburger} alt="hamburger menu" className="mobile" />
+        <img
+          src={hamburger}
+          alt="hamburger menu"
+          className="mobile"
+          onClick={handleModal}
+        />
         <ul className={`${styles.list_container} desktop alata`}>
           <li>About</li>
           <li>Careers</li>
@@ -17,12 +22,15 @@ const Header = () => {
           <li>Support</li>
         </ul>
       </div>
-
       <p className={`${styles.mainText} josefin`}>
         immersive experiences that deliver
       </p>
     </header>
   );
+
+  function handleModal() {
+    setModalState(() => true);
+  }
 };
 
 export default Header;
